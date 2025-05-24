@@ -1,12 +1,9 @@
 # drcom-jlu-qt
-drcom for jlu in qt cross platform
 
-跨平台 **win linux** [下载链接](https://github.com/KnCRJVirX/drcom-jlu-qt/releases)
-
-# 警告
+## 警告
 现在密码是明文保存，具体存在哪跟平台有关。用的QSettings存的，详情请参见官方文档：[https://doc.qt.io/qt-5/qsettings.html#platform-specific-notes](https://doc.qt.io/qt-5/qsettings.html#platform-specific-notes)
 
-# 功能对比
+## 功能对比
 | 功能                 | 官方 | 本版 | 说明                                                             |
 |----------------------|------|------|------------------------------------------------------------------|
 | 记住密码 自动登录    | √    | √    |                                                                  |
@@ -29,11 +26,11 @@ drcom for jlu in qt cross platform
 | linux版不需要root    |      | √    |                                                                  |
 | 不限制NAT           |      | √    | 并不支持有违校方意愿的做法，请自行承担后果                           |
 
-# 注意事项
+## 注意事项
 - 掉线后客户端自动重启重连尝试三次。自动重启登录成功后不弹窗口只最小化到托盘。注：自动重启功能依赖于“记住我”选项的勾选，否则没有账户密码自行重启也并没有什么用
 - 连接JLU.PC登录的时候mac地址随便填就可以，或者随便选一个网卡也可以，只有有线网要求mac地址和网络中心的一致
 
-# 截图
+## 截图
 > WIN:
 
 ![n9c6aQ.png](https://s2.ax1x.com/2019/09/02/n9c6aQ.png)
@@ -45,7 +42,7 @@ drcom for jlu in qt cross platform
 > Ubuntu 18不显示托盘图标的bug的解决方案：
 > [https://askubuntu.com/questions/1056226/ubuntu-budgie-18-04-lts-system-tray-icons-not-all-showing](https://askubuntu.com/questions/1056226/ubuntu-budgie-18-04-lts-system-tray-icons-not-all-showing)
 
-# 感谢
+## 感谢
 
 **图标作者**
 > [https://github.com/lyj3516](https://github.com/lyj3516)
