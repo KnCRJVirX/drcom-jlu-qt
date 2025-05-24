@@ -39,7 +39,7 @@ MainWindow::MainWindow(SingleApplication *parentApp, QWidget *parent) :
 	// 获取mac地址
 	foreach(QNetworkInterface i, QNetworkInterface::allInterfaces()) {
 		if (!i.flags().testFlag(QNetworkInterface::IsLoopBack)) {
-			ui->comboBoxMAC->addItem(i.hardwareAddress() + i.name());
+            ui->comboBoxMAC->addItem(i.hardwareAddress() + " " + i.name());
 		}
 	}
 	ui->comboBoxMAC->addItem(CUSTOM_MAC);
@@ -119,7 +119,7 @@ MainWindow::MainWindow(SingleApplication *parentApp, QWidget *parent) :
 }
 
 void MainWindow::AboutDrcom() {
-	QDesktopServices::openUrl(QUrl("https://github.com/code4lala/drcom-jlu-qt"));
+    QDesktopServices::openUrl(QUrl("https://github.com/KnCRJVirX/drcom-jlu-qt"));
 }
 
 void MainWindow::closeEvent(QCloseEvent *) {
